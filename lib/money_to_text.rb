@@ -3,18 +3,22 @@
 require "date"
 
 class MoneyToText
-  def self.get_text(money = "1345798")
+  def self.get_text(money = "98128765")
     parteEntera = money.to_i
     triUnidades = ((parteEntera % 1000))
     triMiles = ((parteEntera / 1000) % 1000)
     triMillones = ((parteEntera / 1000000) % 1000)
     triMilMillones = ((parteEntera / 1000000000) % 1000)
+    puts triUnidades
+    puts triMiles
+    puts triMillones
+    puts triMilMillones
 
     response = ""
     return "Cero" if parteEntera == 0
 
     if triMilMillones > 0
-      response << triTexto(triMilMillones) << " Mil"
+      response << triTexto(triMilMillones) << "Mil "
     end
 
     if triMillones > 0
@@ -23,9 +27,9 @@ class MoneyToText
 
     if triMilMillones == 0 && triMillones == 1
       response << "Millón "
-    else
+    else if triMilMillones > 0 || triMillones > 0
       response << "Millones "
-    end
+    end     end
 
     if triMiles > 0
       response << triTexto(triMiles) << "Mil "
@@ -80,8 +84,11 @@ class MoneyToText
       return response << "quince " if unidades == 5
       return response << "Dieci"
     when 2
-      unidades == 0 ? response << "veinte " : response << "veinti"
-      return response
+      if unidades == 0
+        return response << "veinte "
+      else
+        response << "veinti"
+      end
     when 3
       response << "treinta "
     when 4
