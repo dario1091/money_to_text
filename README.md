@@ -45,7 +45,7 @@ _Para probar la Gema en la consola de ruby_
   
   Prueba valor default
   
-  _por default trae los festivos del año en curso en este caso 2020_
+  _por default trae equivalente del numero 98128765_
   
    ```MoneyToText.get_text()```
    
