@@ -9,10 +9,6 @@ class MoneyToText
     triMiles = ((parteEntera / 1000) % 1000)
     triMillones = ((parteEntera / 1000000) % 1000)
     triMilMillones = ((parteEntera / 1000000000) % 1000)
-    puts triUnidades
-    puts triMiles
-    puts triMillones
-    puts triMilMillones
 
     response = ""
     return "Cero" if parteEntera == 0
@@ -132,6 +128,4 @@ class MoneyToText
     end
     return response
   end
-
-  puts get_text()
 end
