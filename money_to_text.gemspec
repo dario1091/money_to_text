@@ -1,4 +1,4 @@
-# Archivo Gema_festivos_colombia/festivosColombia.gemspec
+#Archivo Gema_cantidad_texto/money_to_texto.rb
 
 Gem::Specification.new do |s|
   s.name = "money_to_text"

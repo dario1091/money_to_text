@@ -1,6 +1,4 @@
-#Archivo Gema_festivos_colombia/festivos_colombia.rb
-
-require "date"
+#Archivo Gema_cantidad_texto/money_to_texto.rb
 
 class MoneyToText
   def self.get_text(money = "98128765")
