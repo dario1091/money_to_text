@@ -1,6 +1,6 @@
 # Festivos Colombia
 
-_Proyecto creado para obtener un listado de fechas festivas en Colombia_
+_Proyecto creado para obtener de un valor numerico su equivalente en letras_
 
 ### Pre-requisitos 📋
 
@@ -13,15 +13,15 @@ Ruby
 ### Instalación 🔧
 
 **Gemfile**
-```gem 'festivoscolombia', '~> 0.0.1'```
+```gem 'money_to_text', '~> 0.0.2'```
 
 **Install**
-```gem install festivoscolombia```
+```gem install money_to_text```
 
 ## Ejecutando las pruebas ⚙️
 _Para probar la Gema en la consola de ruby_
 
-   ```gem install festivoscolombia```
+   ```gem install money_to_text```
 
 
 ![alt text](https://github.com/dario1091/Festivos_Colombia/blob/master/images/install.PNG)}
@@ -30,33 +30,26 @@ _Para probar la Gema en la consola de ruby_
    consola de ruby
    ```irb```
    
-   ```require 'festivoscolombia'```
+   ```require 'money_to_text'```
    
- ![alt text](https://github.com/dario1091/Festivos_Colombia/blob/master/images/console%20ruby.PNG)}
+ ![alt text](https://github.com/dario1091/money_to_text/blob/master/images/gem_use.PNG)}
 
    
-   Prueba con año dado
+   Prueba entrando valor 
   
-   ```Festivoscolombia.generar_festivos(1991)```
+   ```MoneyToText.get_text("32789")```
    
-  ![alt text](https://github.com/dario1091/Festivos_Colombia/blob/master/images/generate_with_year.PNG)}
+  ![alt text](https://github.com/dario1091/money_to_text/blob/master/images/enter_value.PNG)}
+   
   
-  Prueba sin año 
+  
+  Prueba valor default
   
   _por default trae los festivos del año en curso en este caso 2020_
   
-   ```Festivoscolombia.generar_festivos()```
+   ```MoneyToText.get_text()```
    
-  ![alt text](https://github.com/dario1091/Festivos_Colombia/blob/master/images/generate_without_year.PNG)}
-
-## Consultar una fecha
-
-_Para consultar una fecha especifica_
-
-
-```Festivoscolombia.generar_festivos(2020).include?("2020-04-01")```
-
-  ![alt text](https://github.com/dario1091/Festivos_Colombia/blob/master/images/include.PNG)}
+  ![alt text](https://github.com/dario1091/money_to_text/blob/master/images/result_default.PNG)}
 
 
 
