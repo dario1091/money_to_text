@@ -32,7 +32,7 @@ class MoneyToText
     if triUnidades > 0
       response << triTexto(triUnidades)
     end
-    money << " =  " << response
+    response
   end
 
   def self.triTexto(n)
